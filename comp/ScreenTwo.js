@@ -8,17 +8,8 @@ import { Text } from 'native-base';
 const ScreenTwo =  (props) => {
   
   useEffect(() => {
-    console.log(props);
     alert('test');
   }, []);
-
-  /*useNavigationEvents(evt => {
-    // latest state on evt.state
-    // prev state on evt.lastState
-    // triggering navigation action on evt.action
-
-    console.log(evt)
-  });*/
 
   return (
     <View style={styles.container}>
