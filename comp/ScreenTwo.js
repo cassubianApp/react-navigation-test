@@ -10,7 +10,7 @@ const ScreenTwo =  (props) => {
   useEffect(() => {
     console.log(props);
     alert('test');
-  }, [props.test]);
+  }, []);
 
   /*useNavigationEvents(evt => {
     // latest state on evt.state
