@@ -5,7 +5,12 @@ import ScreenOne from './comp/ScreenOne';
 import ScreenTwo from './comp/ScreenTwo';
 
 const AppNavigator = createStackNavigator({
-  ScreenOne,
-  ScreenTwo});
+  ScreenOne: {
+    screen: ScreenOne,
+  },
+  ScreenTwo: {
+    screen: ScreenTwo,
+  }
+});
 
 export default createAppContainer(AppNavigator);
