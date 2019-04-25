@@ -1,8 +1,8 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
 //components
-import ScreenOne from './components/ScreenOne';
-import ScreenTwo from './components/ScreenTwo';
+import ScreenOne from './comp/ScreenOne';
+import ScreenTwo from './comp/ScreenTwo';
 
 const AppNavigator = createStackNavigator({
   ScreenOne,
