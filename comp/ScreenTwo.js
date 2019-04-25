@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { withNavigationFocus } from 'react-navigation';
-import { useNavigationEvents } from 'react-navigation-hooks';
 
 //ui
 import { StyleSheet, View } from 'react-native';
@@ -20,16 +19,6 @@ const ScreenTwo =  (props) => {
 
     console.log(evt)
   });*/
-
-  const didBlurSubscription = props.navigation.addListener(
-    'didFocus',
-    payload => {
-      useEffect(() => {
-        console.log(props);
-        alert('test');
-      }, []);
-    }
-  );
 
   return (
     <View style={styles.container}>
